@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <meta name="_csrf" content="${_csrf.token}"/>
+    <meta name="_csrf_header" content="${_csrf.headerName}"/> -->
+    <title>IntelliSoft</title>
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="css/site.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.0/gsap.min.js"
+            integrity="sha256-1Se206knhULjcLbvvGRJglWrZoQtnIuQx2DLSpOCvfQ="
+            crossorigin="anonymous"></script>
+    <script rel="js" type="script" src="js/scripts.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/animation.js"></script>
+</head>
+<body>
+<section class="media-index " id="home" style='background:url("images/main.png")'/>
+<header class="site-header" sec:authorize="isAnonymous()">
+    <nav class="site-wrapper">
+        <div class="menu">
+            <ul>
+                <li class="logo"><a href="/"></a><img src="images/logo-site.png" alt="My company logo"/></a></li>
+                <li class="logo-mobile"><a href="/"></a><img src="images/logo-simple.png" alt="My simple company logo"/></a></li>
+            </ul>
+
+            <ul id="nav" role="navigation">
+                <li sec:authorize="isAnonymous()" class="item"><span itemprop="url"><a href="/">Home</a></span></li>
+                <li sec:authorize="isAnonymous()" class="item" ><span itemprop="url"><a href="#invoice">Demo Software</a></span></li>
+                <li sec:authorize="isAnonymous()" class="item"><span property="url"><a href="#aboutUs">About us</a></span></li>
+                <li sec:authorize="isAnonymous()" class="item"><span property="url"><a href="#new-products">Future developments</a></span></li>
+                <li sec:authorize="isAnonymous()" class="item"><span property="url"><a href="#vcard">Contacts</a></span></li>
+              
+            </ul>
+            <button class="toggle-nav" id="toggle" onclick="nav()">&#9776;</button>
+        </div>
+    </nav>
+</header>
+
+   
+        <div class="site-wrapper" >
+
+            <div class="present-content transbox ">
+                <h4>За тези които започват сега</h4>
+                <img id="img-index1" src="images/plug-small.png" alt="Plug and Play">
+                <p>
+                    Ние предлагаме малки инструменти за вашият бизнес, които можете да ползвате безплатно.
+                    Нашата цел е да помагаме на малкия бизнес да се автоматизира без сложни инсталации.
+                    Просто влизаш и ползваш.
+                </p>
+            </div>
+            <div class="present-content2 transbox">
+                <h4>За тези които искат повече, по-бързо и по-добро</h4>
+                <img id="img-index" src="images/fbm-small.png" alt="Faster Better More">
+                <p class="animate-opacity">
+                    Нашите системи са изцяло модулни и промяна в един модул не се отразява на работата на друг.
+                    Целта ни е заедно да обединим работещи малки компоненти, използвани от широк кръг клиенти и да
+                    заменим тромавите решения на пазара.
+                    Да предложим удобен и бърз модулен софтуер за всеки един етап и процес от бизнеса.
+                    От ежедневното издаване на фактури , договори и оферти до обемни складове в реално време, управление
+                    на производствени линии и процеси, както и пълноцени CRM решения.
+                </p>
+            </div>
+        </div>
+    </section>
+    <div class="site-content-article">
+        <div class="site-wrapper">
+            <div class="site-article">
+                <div class="article-content hvr-fade" id="register">
+                    <h2>Intelli ComReg</h2>
+                    <p>
+                        Регистър или по скоро барометър на морала на плащане.
+                        Този регистър правим заедно.
+                        Целта е да покажем най - коректните в бизнеса,
+                        както и да се предпазим от най не коректните.
+                        Даваме възможност бизнеса да оценява бизнес. Всяка една компания може да даде оценка
+                        за друга компания, по показател коректност на база времето на плащане.
+                        Как?
+                        Можете да гласувате за ващите коректни партньори като отбележите че плащат без забава.
+                        Или да подате сигнал за компания която забавя плащания.
+                    </p>
+                    <li><a href="under-construction">Към Софтуера</a></li>
+                </div>
+                <div class="article-media">
+                    <img src="images/earth.png" alt="Earth photo">
+                </div>
+            </div>
+            <div class="site-article">
+                <div class="article-content hvr-fade">
+                    <h2>PNL/PNRgov GENERATOR</h2>
+                    <p>
+                        Искаме да помогнем за създаването на по сигурен свят, заедно с група специалисти в областта на авиацията.
+                        Разработихме един от първите частни генератори на полетна информация.
+                        Всеки в индустрията знае колко много и разнородна информация се иска преди излитането на един пасажер.
+                        Нашата система прави това толкова лесно ....... .
+
+                    </p>
+                    <li><a href="under-construction">Към Софтуера</a></li>
+                </div>
+                <div class="article-media">
+                    <img src="images\travel-logo_site.png" alt="Plane pic">
+                </div>
+            </div>
+            <div class="site-article">
+                <div class="article-content hvr-fade" id="invoice">
+                    <h2>Intelli Invoice</h2>
+                    <p>
+                        Малък софтуер за издаване на фактури.
+                        Съхранява месечните фактури, позволява да ги изпечатате на куп
+                        или да ги експортирате в ексел и PDF.
+                        В него са въведение и се актуализират
+                        всички дружества в България,
+                        чрез постоянна връзка с Търговския регистър.
+                        Очаквайте нови функции.... Ако се сещате нещо не се колебайте да го предложите.
+                    </p>
+                    <li><a href="under-construction">Към Софтуера</a></li>
+                </div>
+                <div class="article-media">
+                    <img src="images\invoice.png" alt="Earth photo">
+                </div>
+            </div>
+
+            <div class="site-article">
+                <div class="article-content hvr-fade" id="collect">
+                    <h2>Intelli Collect</h2>
+                    <p>
+                        Софтуер за управление на вземанията.<br>
+                        Можете:<br>
+                        - да следите плащанията на вашите партньори;<br>
+                        - да им изпращате напомнителни писма;<br>
+                        - да си водите дневник с действия;<br>
+                        - да получавате напомняне за ново събитие;<br>
+                        - да отчитате платените и неплатени суми;<br>
+                        - да разглеждате статистики;
+                    </p>
+                    <li><a href="under-construction">Към Софтуера</a></li>
+                </div>
+                <div class="article-media">
+                    <img src="images\register.png" alt="Earth photo">
+                </div>
+            </div>
+            <div class="site-article">
+                <div class="article-content hvr-fade" id="converter">
+                    <h2>Intelli Convert</h2>
+                    <p>
+                        Конвертор на различни файлове: <br>
+                        1. От PDF в Word<br>
+                        2. От Word в PDF<br>
+                        Конвертор на специални файлове:<br>
+                        3. От "*.pdf", "*.csv", "*.xlsx", "*.xls", "*.txt"<br>
+                        към "*.json", sql or *.txt с нов разделител.<br>
+                        4. Многомерни JSON към SQL Query or My SQL DB
+                        Можете да конвертирате повече от един файл.
+                    </p>
+                    <li><a href="intelli-convert">Към Софтуера</a></li>
+                </div>
+                <div class="article-media">
+                    <img src="images\convertor-bg-small.png" alt="Earth photo">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <section class="media-index"  id="aboutUs" style="'background:url('images\main.png');'">
+        <div class="site-wrapper" id="for-us">
+            <div class="mission">
+                <h4>Мисии</h4>
+
+                <p>Да направим новите технологии по достъпни за бизнесa.</p>
+                <p>Да покажем трудно достъпната информация, по нов лесен удобен и полезен начин</p>
+                <p>Да направим високо технологичните решения достъпни за малкия бизнес и стартъпитe</p>
+                <p>Да изградим модулна система, която да обхване целия бизнес процес</p>
+
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="site-content-article">
+            <div class="site-wrapper">
+                <div class="site-article" id="new-products">
+                    <div class="article-content">
+                        <h4>Предстоящи продукти: 2020</h4>
+                        <p>Модул Счетоводство <strong>Етап - Програмиране</strong></p>
+                        <p>Модул ТРЗ <strong>Етап - Архитектура</strong></p>
+                        <p>Модул Склад <strong>Етап - Програмиране</strong></p>
+                    </div>
+                    <div class="article-media">
+                        <h4>Предстоящи продукти: 2020</h4>
+                        <p>Модул Търговия <strong>Етап - Програмиране</strong></p>
+                        <p>Модул Финанси <strong>Етап - Архитектура</strong></p>
+                        <p>Модул Производство <strong>Етап - Архитектура</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="site-footer">
+        <div id="vcard">
+            <img src="images\logo-site.png" alt="My company logo"/>
+            <p class="adr">
+                <span class="street-address">93 Exzarh Yosif str.</span><br>
+                <span class="region">City: Sofia</span><br>
+                <span class="postal-code">Post code: 1000</span><br>
+                <span class="country-name">Country: Bulgaria</span>
+            </p>
+            <p class="tel">+359 (2) 492 1323 or +359 878 567 637</p>
+            <div>
+                <p>C.O.P. <q>Creating opportunities for people.</q>	&copy</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
+</body>
+</html>
+
+
+   

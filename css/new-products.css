@@ -1,0 +1,19 @@
+#new-products .article-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#new-products h4{
+   padding-top: 1em;
+   padding-bottom: 4em;
+}
+
+#new-products .article-media {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2em;
+    align-items: center;
+    justify-content: center;
+}
