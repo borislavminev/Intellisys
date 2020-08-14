@@ -1,0 +1,27 @@
+{
+  "name": "the-pack",
+  "version": "1.0.0",
+  "description": "Owned ",
+  "main": "index.js",
+  "dependencies": {
+    "gsap": "^3.5.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/borislavminev/Intellisys.git"
+  },
+  "keywords": [
+    "it",
+    "site"
+  ],
+  "author": "Borislav Minev <support@intellisoft.guru>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/borislavminev/Intellisys/issues"
+  },
+  "homepage": "https://github.com/borislavminev/Intellisys#readme"
+}
